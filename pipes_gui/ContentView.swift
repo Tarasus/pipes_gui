@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text(PipesTestWrapper().pipesTest_run()).frame(width: 400, height: 400, alignment:.topLeading).padding(10)
     }
 }
 

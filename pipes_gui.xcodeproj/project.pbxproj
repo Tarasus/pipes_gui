@@ -11,7 +11,33 @@
 		847D207826EB5E1C00F40AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D207726EB5E1C00F40AC1 /* ContentView.swift */; };
 		847D207A26EB5E1D00F40AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D207926EB5E1D00F40AC1 /* Assets.xcassets */; };
 		847D207D26EB5E1D00F40AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D207C26EB5E1D00F40AC1 /* Preview Assets.xcassets */; };
+		847D237626EB6AA200F40AC1 /* cppmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 847D237426EB6AA200F40AC1 /* cppmain.cpp */; };
+		847D238326EB6B4500F40AC1 /* main.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 847D233426EB665700F40AC1 /* main.hpp */; };
+		847D238426EB6B4500F40AC1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 847D233526EB665700F40AC1 /* main.cpp */; };
+		847D238926EB6C7200F40AC1 /* PipesTestWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 847D238826EB6C7200F40AC1 /* PipesTestWrapper.mm */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847D237F26EB6B0C00F40AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847D206A26EB5E1C00F40AC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847D20D926EB62A600F40AC1;
+			remoteInfo = pipes_cmd_child;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		847D20D826EB62A600F40AC1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		847D207226EB5E1C00F40AC1 /* pipes_gui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pipes_gui.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +47,26 @@
 		847D207C26EB5E1D00F40AC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847D207E26EB5E1D00F40AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847D207F26EB5E1D00F40AC1 /* pipes_gui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pipes_gui.entitlements; sourceTree = "<group>"; };
+		847D209B26EB5FEA00F40AC1 /* pipes_gui copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "pipes_gui copy-Info.plist"; path = "/Users/admin/Desktop/pipes_gui/pipes_gui copy-Info.plist"; sourceTree = "<absolute>"; };
+		847D20DA26EB62A600F40AC1 /* pipes_cmd_child */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pipes_cmd_child; sourceTree = BUILT_PRODUCTS_DIR; };
+		847D233426EB665700F40AC1 /* main.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
+		847D233526EB665700F40AC1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		847D237326EB6AA200F40AC1 /* pipes_gui-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pipes_gui-Bridging-Header.h"; sourceTree = "<group>"; };
+		847D237426EB6AA200F40AC1 /* cppmain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cppmain.cpp; sourceTree = "<group>"; };
+		847D237526EB6AA200F40AC1 /* cppmain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cppmain.hpp; sourceTree = "<group>"; };
+		847D238726EB6C2800F40AC1 /* PipesTestWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PipesTestWrapper.h; sourceTree = "<group>"; };
+		847D238826EB6C7200F40AC1 /* PipesTestWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PipesTestWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		847D206F26EB5E1C00F40AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D20D726EB62A600F40AC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,8 +79,10 @@
 		847D206926EB5E1C00F40AC1 = {
 			isa = PBXGroup;
 			children = (
+				847D213126EB65DB00F40AC1 /* cmd */,
 				847D207426EB5E1C00F40AC1 /* pipes_gui */,
 				847D207326EB5E1C00F40AC1 /* Products */,
+				847D209B26EB5FEA00F40AC1 /* pipes_gui copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				847D207226EB5E1C00F40AC1 /* pipes_gui.app */,
+				847D20DA26EB62A600F40AC1 /* pipes_cmd_child */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +104,11 @@
 				847D207E26EB5E1D00F40AC1 /* Info.plist */,
 				847D207F26EB5E1D00F40AC1 /* pipes_gui.entitlements */,
 				847D207B26EB5E1D00F40AC1 /* Preview Content */,
+				847D237426EB6AA200F40AC1 /* cppmain.cpp */,
+				847D237526EB6AA200F40AC1 /* cppmain.hpp */,
+				847D237326EB6AA200F40AC1 /* pipes_gui-Bridging-Header.h */,
+				847D238726EB6C2800F40AC1 /* PipesTestWrapper.h */,
+				847D238826EB6C7200F40AC1 /* PipesTestWrapper.mm */,
 			);
 			path = pipes_gui;
 			sourceTree = "<group>";
@@ -69,6 +119,23 @@
 				847D207C26EB5E1D00F40AC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		847D213126EB65DB00F40AC1 /* cmd */ = {
+			isa = PBXGroup;
+			children = (
+				847D233326EB665700F40AC1 /* child */,
+			);
+			path = cmd;
+			sourceTree = "<group>";
+		};
+		847D233326EB665700F40AC1 /* child */ = {
+			isa = PBXGroup;
+			children = (
+				847D233426EB665700F40AC1 /* main.hpp */,
+				847D233526EB665700F40AC1 /* main.cpp */,
+			);
+			path = child;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,11 +152,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				847D238026EB6B0C00F40AC1 /* PBXTargetDependency */,
 			);
 			name = pipes_gui;
 			productName = pipes_gui;
 			productReference = 847D207226EB5E1C00F40AC1 /* pipes_gui.app */;
 			productType = "com.apple.product-type.application";
+		};
+		847D20D926EB62A600F40AC1 /* pipes_cmd_child */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847D20DE26EB62A600F40AC1 /* Build configuration list for PBXNativeTarget "pipes_cmd_child" */;
+			buildPhases = (
+				847D20D626EB62A600F40AC1 /* Sources */,
+				847D20D726EB62A600F40AC1 /* Frameworks */,
+				847D20D826EB62A600F40AC1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pipes_cmd_child;
+			productName = pipes_cmd_child;
+			productReference = 847D20DA26EB62A600F40AC1 /* pipes_cmd_child */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +186,10 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					847D207126EB5E1C00F40AC1 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					847D20D926EB62A600F40AC1 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -119,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				847D207126EB5E1C00F40AC1 /* pipes_gui */,
+				847D20D926EB62A600F40AC1 /* pipes_cmd_child */,
 			);
 		};
 /* End PBXProject section */
@@ -141,11 +231,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				847D207826EB5E1C00F40AC1 /* ContentView.swift in Sources */,
+				847D237626EB6AA200F40AC1 /* cppmain.cpp in Sources */,
 				847D207626EB5E1C00F40AC1 /* pipes_guiApp.swift in Sources */,
+				847D238926EB6C7200F40AC1 /* PipesTestWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D20D626EB62A600F40AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847D238326EB6B4500F40AC1 /* main.hpp in Sources */,
+				847D238426EB6B4500F40AC1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847D238026EB6B0C00F40AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847D20D926EB62A600F40AC1 /* pipes_cmd_child */;
+			targetProxy = 847D237F26EB6B0C00F40AC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		847D208026EB5E1D00F40AC1 /* Debug */ = {
@@ -268,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = pipes_gui/pipes_gui.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -281,6 +391,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "E.pipes-gui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pipes_gui/pipes_gui-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -290,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = pipes_gui/pipes_gui.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,7 +416,26 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "E.pipes-gui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pipes_gui/pipes_gui-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		847D20DF26EB62A600F40AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "cmd/child/main.hpp cmd/child/main.cpp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		847D20E026EB62A600F40AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "cmd/child/main.hpp cmd/child/main.cpp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -324,6 +456,15 @@
 			buildConfigurations = (
 				847D208326EB5E1D00F40AC1 /* Debug */,
 				847D208426EB5E1D00F40AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847D20DE26EB62A600F40AC1 /* Build configuration list for PBXNativeTarget "pipes_cmd_child" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847D20DF26EB62A600F40AC1 /* Debug */,
+				847D20E026EB62A600F40AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

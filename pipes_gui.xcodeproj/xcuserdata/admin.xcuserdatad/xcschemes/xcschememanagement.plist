@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>pipes_gui.xcscheme_^#shared#^_</key>
+		<key>pipes_cmd_child.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>pipes_cmd_inner.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>pipes_gui copy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>pipes_gui.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 </dict>
